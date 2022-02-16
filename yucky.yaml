@@ -1,0 +1,14 @@
+version: "3.0"
+
+services:
+  db:
+    image: mysql:latest
+    container_name: mysql-container
+    # db명, pw, mysql 계정명
+    environment:
+      MYSQL_DATABASE: New_DB
+      MYSQL_USER: root
+      MYSQL_PASSWORD: tlstjdals1
+      MYSQL_ROOT_PASSWORD: tlstjdals1
+    ports:
+      - 3306:3306
