@@ -1,4 +1,0 @@
-# application-dev.yaml
-spring:
-  profiles:
-    active: dev
