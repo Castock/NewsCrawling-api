@@ -3,7 +3,7 @@
 ## 주식 뉴스 크롤링 API
 
 ### docker
-(image build) docker build -t demo:0.0.1-SNAPSHOT .(/)
+(image build) docker build -t demo:0.0.1-SNAPSHOT .
 
 (container run) docker run -it -d -p 8880:8080 demo:0.0.1-SNAPSHOT --name ha
 
@@ -11,6 +11,6 @@
 
 docker start mysql-container
 
-docker exec -it mysql-container bash
+docker exec -it -e LC_ALL=C.UTF-8 root bash
 
 #/ mysql -u root -p
